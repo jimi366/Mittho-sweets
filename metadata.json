@@ -1,0 +1,6 @@
+{
+  "name": "Mittho Sweets & Bakers",
+  "description": "Premium brand Sweets, Custom themed Cakes & Luxury Confectionery in Gojra City. Crafted on-site with 100% pure Desi Ghee & Fresh ingredients. Order instantly via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

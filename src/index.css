@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, sans-serif;
+  
+  --color-maroon-50: #fbf9f8;
+  --color-maroon-100: #ffd9d4;
+  --color-maroon-200: #ffb4a8;
+  --color-maroon-300: #ff8c7c;
+  --color-maroon-400: #ff5443;
+  --color-maroon-500: #b22b1d;
+  --color-maroon-600: #8f0f07;
+  --color-maroon-700: #800000;
+  --color-maroon-800: #6a0000;
+  --color-maroon-900: #570000;
+  --color-maroon-950: #410000;
+
+  --color-gold-50: #fefdfb;
+  --color-gold-100: #ffe088;
+  --color-gold-200: #ffd564;
+  --color-gold-300: #e9c349;
+  --color-gold-400: #d0aa2b;
+  --color-gold-500: #b59210;
+  --color-gold-600: #937500;
+  --color-gold-700: #735c00;
+  --color-gold-800: #574500;
+  --color-gold-900: #3b2f00;
+  --color-gold-950: #241a00;
+
+  --color-cream: #fbf9f8;
+  --color-cream-dark: #f0eded;
+  --color-charcoal: #1b1c1c;
+  --color-beige: rgba(115, 92, 0, 0.15);
+  --color-beige-dark: #8e706c;
+}
+
+/* Base resets & global styles */
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif-brand {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-maroon-800);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-maroon-900);
+}
+
+/* Animations helper classes */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Overlay dark shade for hero */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(50, 4, 4, 0.45) 0%, rgba(15, 15, 15, 0.68) 100%);
+}
+
+.card-overlay {
+  background: linear-gradient(to top, rgba(87,0,0,0.9) 0%, rgba(87,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+}
